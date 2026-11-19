@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Họ và tên"
+            android:inputType="textCapWords"
+            android:singleLine="true"
+            android:imeOptions="actionNext" />
+
+        <EditText
+            android:id="@+id/etStudentCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:minHeight="48dp"
+            android:hint="Mã số sinh viên"
+            android:inputType="text"
+            android:singleLine="true"
+            android:imeOptions="actionNext" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:minHeight="48dp"
+            android:hint="Email (có thể bỏ trống)"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:imeOptions="actionNext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Để trống email để dùng MSSV@ute.udn.vn."
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etGpa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:minHeight="48dp"
+            android:hint="GPA từ 0 đến 4"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:imeOptions="actionDone" />
+
+    </LinearLayout>
+</ScrollView>
